@@ -16,15 +16,15 @@
 
   <body>
 
-    <nav class="navbar navbar-expand-lg bg-light ">
+    <nav class="navbar navbar-expand-lg bg-dark ">
         <div class="container-fluid ">
-          <a class="navbar-brand " href="#">Calculadora de Colas (M/M/n)</a>
+          <a class="navbar-brand text-white" href="#">Calculadora de Colas (M/M/n)</a>
             </div>
         </div>
       </nav>
 
 
-    <div class="container ">
+    <div class="container m-0 ">
       <div class="col-3" id="form-inputs">
         <div class="form-group">
           <label for="LamValue">Ritmo de llegada</label>
@@ -67,29 +67,30 @@
             value="Reiniciar"
             id="reset"
           />
+          <hr class="my-4">
         </div>
       </div>
       <div class="col">
         <p class="results-text">
-          • Probabilidad de encontar el/los servidores ocupados (𝜌):
+          % de encontar los servidores ocupados:
         </p>
-        <h4 id="value(p)"></h4>
+        <h4 id="valueA"></h4>
         <p class="results-text">
-          • Probabilidad de encontar el/los servidores desocupados (P0):
+          % de encontar los servidores desocupados:
         </p>
-        <h4 id="value(PO)"></h4>
-        <p class="results-text">• Promedio de trabajos en cola (Lq):</p>
-        <h4 id="value(Lq)"></h4>
-        <p class="results-text">• Promedio de trabajos en el sistema (Ls):</p>
-        <h4 id="value(Ls)"></h4>
-        <p class="results-text">• Tiempo de espera promedio en cola (Wq):</p>
-        <h4 id="value(Wq)"></h4>
-        <p class="results-text">• Tiempo de espera promedio en sistema (Ws):</p>
-        <h4 id="value(Ws)"></h4>
+        <h4 id="valueB"></h4>
+        <p class="results-text">% de trabajos en cola:</p>
+        <h4 id="valueC"></h4>
+        <p class="results-text">% de trabajos en el sistema:</p>
+        <h4 id="valueD"></h4>
+        <p class="results-text">Tiempo de espera promedio en cola:</p>
+        <h4 id="valueE"></h4>
+        <p class="results-text">Tiempo de espera promedio en sistema:</p>
+        <h4 id="valueF"></h4>
         <p class="results-text">
-          • Probabiliad de que todos los servidores estén ocupados (P(n >= s)):
+          % de que todos los servidores estén ocupados:
         </p>
-        <h4 id="value((P(n >= s)))"></h4>
+        <h4 id="valueG"></h4>
       </div>
     </div>
     <script
@@ -99,3 +100,4 @@
     ></script>
   </body>
 </html>
+
